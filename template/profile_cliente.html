@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container-fluid overflow-hidden">
+        <div class="row vh-100 overflow-auto">
+<!-- navbar inicio -->
+                      <div class="d-flex bg_sidebar pt-2">
+                        <div class="container-sidebar">
+                            <!-- logo icon -->
+                            <div class="container">
+                            <div class="row d-flex  align-items-center">
+                                <div class="col-6"> <img height="64" width="64" src="./img/cropped-Imagen-1.png" alt=""> </div>
+                                <div class="col-6"> 
+                                    <a 
+                                    href="./index.html"
+                                    class="align-items-center text-white text-decoration-none">
+                                    <span class="icon-title">Admin</span>
+                                    </a> 
+                                </div>
+                            </div>
+                            </div>
+                            
+                         
+                            <!-- menu -->
+                            <div class="container mt-2 container-menu">
+                                <ul class="nav flex-sm-column groupmenu">
+                                    <li class="dropdown item">
+                                        <a 
+                                           id="dropdown"
+                                           href="#"
+                                           class="nav-link dropdown-toggle"
+                                           data-bs-toggle="dropdown"
+                                           aria-expanded="false">
+                                           <i class="fs-5 bi-bootstrap"></i>
+                                           <span>Catalogo</span>
+                                        </a>
+                                           <ul
+                                           class="dropdown-menu text-small shadow"
+                                           aria-labelledby="dropdown">
+                                           <li>
+                                            <a 
+                                            href="./categorias.html"
+                                            class="dropdown-item">
+                                            <span>Categorías</span>
+                                            </a>
+                                         </li>
+                                         <li>
+                                            <a 
+                                            href="./sub_categorias.html"
+                                            class="dropdown-item">
+                                            <span>Sub Categorías</span>
+                                            </a>
+                                         </li>
+                                           <li>
+                                                <a 
+                                                href="./catalogo.html"
+                                                class="dropdown-item">
+                                                <span>Artículos</span>
+                                                </a>
+                                             </li>
+                                           </ul>
+                                 
+                                    </li>
+    
+                                    <li class="nav-item item">
+                                        <a href="./inventario.html" class="nav-link"> <span>Inventario</span></a>
+                                    </li>
+    
+                                    <li class="dropdown item">
+                                        <a 
+                                           id="dropdown"
+                                           href="#"
+                                           class="nav-link dropdown-toggle"
+                                           data-bs-toggle="dropdown"
+                                           aria-expanded="false">
+                                           <i class="fs-5 bi-bootstrap"></i>
+                                           <span>Pedidos</span>
+                                        </a>
+                                           <ul
+                                           class="dropdown-menu text-small shadow"
+                                           aria-labelledby="dropdown">
+                                           <li>
+                                            <a 
+                                            href="./categorias.html"
+                                            class="dropdown-item">
+                                            <span>Categorías</span>
+                                            </a>
+                                         </li>
+                                         <li>
+                                            <a 
+                                            href="./sub_categorias.html"
+                                            class="dropdown-item">
+                                            <span>Sub Categorías</span>
+                                            </a>
+                                         </li>
+                                           <li>
+                                                <a 
+                                                href="./catalogo.html"
+                                                class="dropdown-item">
+                                                <span>Artículos</span>
+                                                </a>
+                                             </li>
+                                           </ul>
+                                 
+                                    </li>
+                                    <li class="dropdown item">
+                                        <a 
+                                           id="dropdown"
+                                           href="#"
+                                           class="nav-link dropdown-toggle"
+                                           data-bs-toggle="dropdown"
+                                           aria-expanded="false">
+                                           <i class="fs-5 bi-bootstrap"></i>
+                                           <span>Clientes</span>
+                                        </a>
+                                           <ul
+                                           class="dropdown-menu text-small shadow"
+                                           aria-labelledby="dropdown">
+                                           <li>
+                                            <a 
+                                            href="./categorias.html"
+                                            class="dropdown-item">
+                                            <span>Directorio</span>
+                                            </a>
+                                         </li>
+                                         <li>
+                                            <a 
+                                            href="./sub_categorias.html"
+                                            class="dropdown-item">
+                                            <span>Sub Categorías</span>
+                                            </a>
+                                         </li>
+                                           <li>
+                                                <a 
+                                                href="./catalogo.html"
+                                                class="dropdown-item">
+                                                <span>Artículos</span>
+                                                </a>
+                                             </li>
+                                           </ul>
+                                 
+                                    </li>
+                                    <!-- dropdown menu -->
+                                </ul>
+                            </div>
+                          
+    
+                            <!-- profile menu -->
+                            <div class="container menu-profile">
+
+                                <div
+                                    class="dropdown py-sm-4">
+                                    <a 
+                                      href="#"
+                                      class="d-flex align-items-center justify-content-around  text-decoration-none dropdown-toggle"
+                                      id="dropdownUser1" data-bs-toggle="dropdown"
+                                      aria-expanded="false">
+                                        <div 
+                                            class="rounded-circle icon-avatar">
+                                            <i class="fa-regular fa-id-badge"></i>
+                                        </div>
+                                      <span class="d-none d-sm-inline mx-1">Joel Sanchez</span>
+                                    </a>
+                                    <ul
+                                        class="dropdown-menu dropdown-menu-white groupmenu"
+                                        aria-labelledby="dropdownUser1">
+                            
+                                        <li 
+                                        class="item">
+                                        <a 
+                                        class="dropdown-item"
+                                        href="./profile.html"> <span>Perfil</span></a>
+                                        </li>
+                                        <li 
+                                        class="item">
+                                        <a 
+                                        class="dropdown-item"
+                                        href="./index.html"> <span>Cerrar Sesión</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+<!-- navbar end -->
+
+<!-- contenido -->
+            <div class="col d-flex flex-column h-100">
+                <main class="row d-flex justify-content-around mt-5">
+                  <div class="container">
+                    <div class="row p-5 d-flex align-items-center justify-content-center">
+                        <div class="col-9 card-profile">
+                            <div class="container-img">
+                                <div class="card-img">
+                                    <img src="./img/photo-profile.png" alt="img-profile">
+                                </div>
+                            </div>
+                            <div class="card-containerInfo">
+                                <form action="">
+                                    <div class="card-title"> <h4>Información de usuario</h4> </div>
+                                    <div class="card-info">
+                                        <div class="group-input">
+                                            <label for="name">Nombre:</label>
+                                            <input class="input-profile" type="text" value="Joel Sanchez Lopez">
+                                            <label for="name">Rol:</label>
+                                            <input class="input-profile" type="text" value="Administrador">
+                                        </div>
+                                        <div class="group-input">
+                                            <label for="name">Usuario:</label>
+                                            <input class="input-profile" type="text" value="Joel Sanchez Lopez">
+                                            <label for="name">Contraseña:</label>
+                                            <input class="input-profile" type="password" value="Administrador">
+                                        </div>
+                                        <div class="group-input d-flex justify-content-center gap-3">
+                                           <button class="btn btn-inputs"> <i class="fa-solid fa-pen"></i> Editar</button>
+                                           <button class="btn btn-inputs"> <i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+                                        </div>
+                                    </div>
+                                    <div class="card-actions"></div>
+                                </form>
+                            </div>
+                        </div>
+                      
+                       
+                    </div>
+
+                  </div>
+                </main>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+
+</html>

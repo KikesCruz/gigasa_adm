@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gigasa Admin</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <div class="container-fluid overflow-hidden">
+            <div class="row vh-100 overflow-auto">
+<!-- navbar inicio -->
+
+<div class="d-flex bg_sidebar pt-2">
+    <div class="container-sidebar">
+        <!-- logo icon -->
+        <div class="container">
+        <div class="row d-flex  align-items-center">
+            <div class="col-6"> <img height="64" width="64" src="./img/cropped-Imagen-1.png" alt=""> </div>
+            <div class="col-6"> 
+                <a 
+                href="./index.html"
+                class="align-items-center text-white text-decoration-none">
+                <span class="icon-title">Admin</span>
+                </a> 
+            </div>
+        </div>
+        </div>
+        
+     
+        <!-- menu -->
+        <div class="container mt-2 container-menu">
+            <ul class="nav flex-sm-column groupmenu">
+                <li class="dropdown item">
+                    <a 
+                       id="dropdown"
+                       href="#"
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                       <i class="fs-5 bi-bootstrap"></i>
+                       <span>Catalogo</span>
+                    </a>
+                       <ul
+                       class="dropdown-menu text-small shadow"
+                       aria-labelledby="dropdown">
+                       <li>
+                        <a 
+                        href="./categorias.html"
+                        class="dropdown-item">
+                        <span>Categorías</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a 
+                        href="./sub_categorias.html"
+                        class="dropdown-item">
+                        <span>Sub Categorías</span>
+                        </a>
+                     </li>
+                       <li>
+                            <a 
+                            href="./catalogo.html"
+                            class="dropdown-item">
+                            <span>Artículos</span>
+                            </a>
+                         </li>
+                       </ul>
+             
+                </li>
+
+                <li class="nav-item item">
+                    <a href="./inventario.html" class="nav-link"> <span>Inventario</span></a>
+                </li>
+
+                <li class="dropdown item">
+                    <a 
+                       id="dropdown"
+                       href="#"
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                       <i class="fs-5 bi-bootstrap"></i>
+                       <span>Pedidos</span>
+                    </a>
+                       <ul
+                       class="dropdown-menu text-small shadow"
+                       aria-labelledby="dropdown">
+                       <li>
+                        <a 
+                        href="./categorias.html"
+                        class="dropdown-item">
+                        <span>Categorías</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a 
+                        href="./sub_categorias.html"
+                        class="dropdown-item">
+                        <span>Sub Categorías</span>
+                        </a>
+                     </li>
+                       <li>
+                            <a 
+                            href="./catalogo.html"
+                            class="dropdown-item">
+                            <span>Artículos</span>
+                            </a>
+                         </li>
+                       </ul>
+             
+                </li>
+                <li class="dropdown item">
+                    <a 
+                       id="dropdown"
+                       href="#"
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                       <i class="fs-5 bi-bootstrap"></i>
+                       <span>Clientes</span>
+                    </a>
+                       <ul
+                       class="dropdown-menu text-small shadow"
+                       aria-labelledby="dropdown">
+                       <li>
+                        <a 
+                        href="./categorias.html"
+                        class="dropdown-item">
+                        <span>Directorio</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a 
+                        href="./sub_categorias.html"
+                        class="dropdown-item">
+                        <span>Sub Categorías</span>
+                        </a>
+                     </li>
+                       <li>
+                            <a 
+                            href="./catalogo.html"
+                            class="dropdown-item">
+                            <span>Artículos</span>
+                            </a>
+                         </li>
+                       </ul>
+             
+                </li>
+                <!-- dropdown menu -->
+            </ul>
+        </div>
+      
+
+        <!-- profile menu -->
+        <div class="container menu-profile">
+
+            <div
+                class="dropdown py-sm-4">
+                <a 
+                  href="#"
+                  class="d-flex align-items-center justify-content-around  text-decoration-none dropdown-toggle"
+                  id="dropdownUser1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                    <div 
+                        class="rounded-circle icon-avatar">
+                        <i class="fa-regular fa-id-badge"></i>
+                    </div>
+                  <span class="d-none d-sm-inline mx-1">Joel Sanchez</span>
+                </a>
+                <ul
+                    class="dropdown-menu dropdown-menu-white groupmenu"
+                    aria-labelledby="dropdownUser1">
+        
+                    <li 
+                    class="item">
+                    <a 
+                    class="dropdown-item"
+                    href="./profile.html"> <span>Perfil</span></a>
+                    </li>
+                    <li 
+                    class="item">
+                    <a 
+                    class="dropdown-item"
+                    href="./index.html"> <span>Cerrar Sesión</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- navbar end -->
+<!-- navbar end -->
+
+                <!-- contenido -->
+                <div class="col d-flex flex-column h-100">
+                    <main class="row d-flex justify-content-around mt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 p-3">
+                                    <!-- titulo de sección -->
+                                    <div class="container">
+                                        <div class="m-2">
+                                            <div class="row">
+                                                <div class="col-sm-4"></div>
+                                                <div class="col-sm-4 col-5">
+                                                    <h3>Inventario Disponible</h3>
+                                                </div>
+                                                <div class="col-sm-4"> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- fin de titulo -->
+                                    <!-- inicio de tabla -->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 p-3">
+                                                <table id="list_inventario"
+                                                    class="table align-middle table-striped table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Sku</th>
+                                                            <th>Articulo</th>
+                                                            <th>Categorìa</th>
+                                                            <th>Sub Categorìa</th>
+                                                            <th>Descripción</th>
+                                                            <th>Estatus</th>
+                                                            <th>Acciones</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td
+                                                                class="align-top">
+                                                                <p
+                                                                    class="fw-normal mb-1">750001245</p>
+                                                            </td>
+                                                            <td
+                                                                class="align-top">
+                                                                <p
+                                                                    class="fw-normal mb-1">Consultant</p>
+                                                            </td>
+                                                            <td
+                                                                class="align-top">
+                                                                <p
+                                                                    class="fw-normal mb-1">Pantente</p>
+                                                            </td>
+                                                            <td
+                                                                class="align-top">
+                                                                <p
+                                                                    class="fw-nomal mb-1">Antidepresivo</p>
+                                                            </td>
+                                                            <td
+                                                                class="align-top">
+                                                                <p
+                                                                    class="fw-nomal mb-1">sasadsda</p>
+                                                            </td>
+                                                            <td
+                                                                class="align-top">
+                                                                <span
+                                                                    class="badge bg-success rounded-pill d-inline">Active</span>
+                                                            </td>
+                                                            <td
+                                                                class="align-top">
+                                                                <div
+                                                                    class="dropdown">
+                                                                    <button
+                                                                        class="d-flex align-items-center dropdown-toggle btn btn-warning"
+                                                                        id="dropdownUser1"
+                                                                        data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        Ver
+                                                                    </button>
+                                                                    <ul
+                                                                        class="dropdown-menu dropdown-menu-dark text-small shadow"
+                                                                        aria-labelledby="dropdownUser1">
+                                                                        <li><a
+                                                                                class="dropdown-item"
+                                                                                href="#">Editar</a>
+                                                                        </li>
+
+                                                                        <li><a
+                                                                                class="dropdown-item"
+                                                                                href="#">Profile</a>
+                                                                        </li>
+                                                                        <li><a
+                                                                                class="dropdown-item"
+                                                                                href="#">Sign
+                                                                                out</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- fin de tabla -->
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+
+</html>
