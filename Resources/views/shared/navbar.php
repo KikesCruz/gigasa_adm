@@ -23,7 +23,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./subcategory">
                                 Sub Categorías
                             </a>
                         </li>

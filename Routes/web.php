@@ -4,6 +4,7 @@ use Lib\Route;
 use App\Controllers\LoginController;
 use App\Controllers\HomeController;
 use App\Controllers\CategoryController;
+use App\Controllers\SubCategoryController;
 /***
  * Routes para login
  */
@@ -24,6 +25,15 @@ Route::get('/category',[CategoryController::class,'category']);
 Route::post('/category/save', [CategoryController::class, 'saveCategory']);
 Route::post('/category/delete', [CategoryController::class, 'deleteCategory']);
 Route::post('/category/update', [CategoryController::class, 'updateCategory']);
+
+/**
+ * Routes para sub category
+ */
+
+Route::get('/subcategory', [SubCategoryController::class, 'subcategory']);
+
+
+
 
 
 Route::dispatch();

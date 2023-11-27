@@ -1,4 +1,4 @@
-<?php 
+<?php
 require APP_ROOT . 'Resources/views/shared/header.php';
 ?>
 
@@ -8,7 +8,7 @@ require APP_ROOT . 'Resources/views/shared/header.php';
             <div class='col-12 p-2 d-flex align-items-center justify-content-center'>
                 <div>
                     <div class='form-detail p-3'>
-                        <img width='320px' height='320px' src='./img/icon.png' alt=''>
+                        <img width='320px' height='320px' src='<?= APP['baseurl'] . '\Public\img\icons\icon-vertical.png'; ?> ' alt=''>
                     </div>
 
                     <div class='form-input p-3'>
@@ -35,5 +35,5 @@ require APP_ROOT . 'Resources/views/shared/header.php';
         </div>
     </main>
 
-<?php require APP_ROOT . 'Resources/views/shared/footer.php';
-?>
+    <?php require APP_ROOT . 'Resources/views/shared/footer.php';
+    ?>
