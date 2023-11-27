@@ -1,5 +1,5 @@
 <?php 
-require APP_ROOT . 'resources/views/shared/header.php';
+require APP_ROOT . 'Resources/views/shared/header.php';
 ?>
 
 <body>
@@ -35,5 +35,5 @@ require APP_ROOT . 'resources/views/shared/header.php';
         </div>
     </main>
 
-<?php require APP_ROOT . 'resources/views/shared/footer.php';
+<?php require APP_ROOT . 'Resources/views/shared/footer.php';
 ?>

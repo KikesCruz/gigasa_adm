@@ -2,7 +2,7 @@
     <nav class="navbarH">
         <div class="logo">
             <div class="icon-logo">
-                <img src="<?= APP['baseurl'] . '\public\img\icons\icon-horizontal.png'; ?> " alt="logo-admin">
+                <img src="<?= APP['baseurl'] . '\Public\img\icons\icon-horizontal.png'; ?> " alt="logo-admin">
             </div>
             <div class="logo-title">
                 <h4>Admin</h4>

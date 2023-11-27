@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use lib\Database;
+use Lib\Database;
 
 class CategoryModel  {
 

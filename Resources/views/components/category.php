@@ -1,10 +1,10 @@
 <?php
-require APP_ROOT . 'resources/views/shared/header.php';
+require APP_ROOT . 'Resources/views/shared/header.php';
 ?>
 
 <main id="container-main">
     <?php
-    require APP_ROOT . 'resources/views/shared/navbar.php';
+    require APP_ROOT . 'Resources/views/shared/navbar.php';
     ?>
     <section class="container">
         <div class="title-section">
@@ -113,5 +113,5 @@ require APP_ROOT . 'resources/views/shared/header.php';
 </div>
 
 <?php
-require APP_ROOT . '/resources/views/shared/footer.php';
+require APP_ROOT . 'Resources/views/shared/footer.php';
 ?>

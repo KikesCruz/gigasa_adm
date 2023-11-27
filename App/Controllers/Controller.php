@@ -9,15 +9,15 @@ class Controller{
 
         $view = str_replace(".","/", $view);
 
-        
-        if (!file_exists(APP_ROOT."resources/views/components/{$view}.php")) {
+       
+        if (!file_exists(APP_ROOT."Resources/views/components/{$view}.php")) {
             return "No existe";
         }
 
         
         ob_start();
      
-        include(APP_ROOT."/resources/views/components/{$view}.php");
+        include(APP_ROOT."Resources/views/components/{$view}.php");
 
         $page = ob_get_clean();
         
