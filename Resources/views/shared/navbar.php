@@ -28,8 +28,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                Artículos
+                            <a href="./brands">
+                                Marcas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./articulos">
+                                Articulos
                             </a>
                         </li>
 

@@ -26,13 +26,13 @@ class Controller{
 
     public function sanitizerString($paramsString)
     {
+        $paramsString = strtolower($paramsString);
         $paramsString = preg_replace('/\s{2,}/',' ', $paramsString);
         $paramsString = preg_replace('/[^A-Za-záéíóúñÑ ]/','', $paramsString);
         $paramsString = str_replace('&nbsp;', '', $paramsString);
         $paramsString = strip_tags($paramsString);
         $paramsString = html_entity_decode($paramsString);
         $paramsString = trim($paramsString);
-        $paramsString = strtolower($paramsString);
             return $paramsString;
     
     }
@@ -47,6 +47,12 @@ class Controller{
             
             return $paramsInt;
         
+    }
+
+    public function debug($param){
+        echo "<pre>";
+        print_r($param);
+        echo "</pre>";
     }
 
 

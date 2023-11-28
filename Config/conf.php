@@ -10,7 +10,8 @@ define('APP_ROOT', str_replace('\\','/',FOLDER_APP).'/');
 
 
 /** db conf */
-define('DB_HOST', '192.168.1.92');
+//define('DB_HOST', '192.168.1.92');
+define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', 'admin');
 define('DB_NAME','gigasa_db');
