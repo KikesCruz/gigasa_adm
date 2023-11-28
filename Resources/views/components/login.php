@@ -24,7 +24,7 @@ require APP_ROOT . 'Resources/views/shared/header.php';
                             </div>
 
                             <!-- Submit button -->
-                            <button type='submit' class='btn btn-warning'>
+                            <button type='submit' class='btn btn-success col-12'>
                                 Inicia Sesión
                             </button>
                         </form>

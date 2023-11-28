@@ -25,7 +25,7 @@ require APP_ROOT . 'Resources/views/shared/header.php';
                         </thead>
                         <tbody>
 
-                            <?php foreach ($param as $category) : ?>
+                            <?php foreach ($param['subcat'] as $category) : ?>
                                 <tr id="table-cat">
                                     <td> <?= $category['id_catSub'] ?> </td>
                                     <td> <?= $category['nombre_cat'] ?> </td>
@@ -47,25 +47,30 @@ require APP_ROOT . 'Resources/views/shared/header.php';
                     </table>
                 </div>
                 <div class="col-6">
-                    <div class="p-3">
+                    <form class="p-1">
                         <div class="row">
                             <div class="col">
-                                <input id="newCategory" type="text" class="form-control shadow-none" placeholder="Ingresa la categoría" autocomplete="off">
-                                <div id="alert_err" class="alert_ms alert-danger mt-1 text-center" role="alert">
-                                    campo vacío!
-                                </div>
-                                <div id="alert_existe" class="alert_ms alert-danger mt-1 text-center" role="alert">
-                                    Ya existe esta categoría!
-                                </div>
+                                <select class="form-select shadow-none" aria-label="Default select example">
+                                    <option selected>Categorías</option>
 
+                                    <?php foreach ($param['cat'] as $cat) : ?>
+                                        <option value="<?= $cat['id_cat'] ?>  "> <?= $cat['nombre_cat'] ?> </option>
+                                    <?php endforeach; ?>
+
+
+
+                                </select>
                             </div>
                             <div class="col">
-                                <button id="btn_guardCat" type="button" class="btn btn-success">
-                                    Guardar
-                                </button>
+                                <input type="text" class="form-control shadow-none" placeholder="Ingresa la categoría">
                             </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col mt-3">
+                                <button type="button" class="btn btn-success">Guardar</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

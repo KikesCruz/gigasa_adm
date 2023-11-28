@@ -26,4 +26,10 @@ class SubCategoryModel
         $result = $this->db->resultSet();
         return $result;
     }
+
+    public function allCategory(){
+        $this->db->query('select id_cat,nombre_cat from categorias where status_category =1;');
+        $result = $this->db->resultSet();
+        return $result;
+    }
 }

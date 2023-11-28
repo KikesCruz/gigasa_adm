@@ -11,8 +11,13 @@ class SubCategoryController extends Controller{
     }
 
     public function subcategory(){
-        $result = $this -> model -> allSubCategory();
-        return $this ->renderView("subcategory",$result);
-    }
+        $subcat = $this -> model -> allSubCategory();
+        $cat = $this -> model -> allCategory();
 
+        $params=[
+            "subcat" => $subcat,
+            "cat" => $cat
+        ];
+        return $this ->renderView("subcategory",$params);
+    }
 }
