@@ -32,4 +32,17 @@ class SubCategoryModel
         $result = $this->db->resultSet();
         return $result;
     }
+
+    public function addSubCategory($params){
+        $this -> db -> query("INSERT INTO sub_categorias VALUES (null,:nombre_SubCat,1,:id_cat) ");
+        $this -> db -> bind(':nombre_SubCat', $params['name_sub']);
+        $this->db->bind(':id_cat', $params['id_cat']);
+
+        if($this -> db -> execute()){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
 }

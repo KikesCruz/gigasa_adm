@@ -31,6 +31,7 @@ Route::post('/category/update', [CategoryController::class, 'updateCategory']);
  */
 
 Route::get('/subcategory', [SubCategoryController::class, 'subcategory']);
+Route::post('/subcategory/save', [SubCategoryController::class, 'addSubCategory']);
 
 
 

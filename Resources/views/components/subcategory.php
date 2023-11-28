@@ -47,14 +47,14 @@ require APP_ROOT . 'Resources/views/shared/header.php';
                     </table>
                 </div>
                 <div class="col-6">
-                    <form class="p-1">
+                    <div class="p-1">
                         <div class="row">
                             <div class="col">
-                                <select class="form-select shadow-none" aria-label="Default select example">
+                                <select id="categoryList" class="form-select shadow-none" aria-label="Default select example">
                                     <option selected>Categorías</option>
 
                                     <?php foreach ($param['cat'] as $cat) : ?>
-                                        <option value="<?= $cat['id_cat'] ?>  "> <?= $cat['nombre_cat'] ?> </option>
+                                        <option value="<?= $cat['id_cat'] ?>"><?= $cat['nombre_cat']?></option>
                                     <?php endforeach; ?>
 
 
@@ -62,15 +62,22 @@ require APP_ROOT . 'Resources/views/shared/header.php';
                                 </select>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control shadow-none" placeholder="Ingresa la categoría">
+                                <input 
+                                id="txtSubCategory"
+                                type="text" 
+                                class="form-control shadow-none" 
+                                placeholder="Ingresa la categoría">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mt-3">
-                                <button type="button" class="btn btn-success">Guardar</button>
+                                <button 
+                                id="btnSubCategory"
+                                type="button" 
+                                class="btn btn-success">Guardar</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

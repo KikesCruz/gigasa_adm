@@ -20,4 +20,23 @@ class SubCategoryController extends Controller{
         ];
         return $this ->renderView("subcategory",$params);
     }
+
+    public function addSubCategory(){
+
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            $data = [
+                'id_cat' => $this -> sanitizerInt($_POST['category']),
+                'name_sub' => $this -> sanitizerString($_POST['subCategory'])
+            ];
+
+            if ($data != '') {
+             $response = $this -> model -> addSubCategory($data);
+            } else {
+                $response = 'blanco';
+            }
+            echo json_encode($response);
+
+        }
+        
+    }
 }
