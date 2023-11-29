@@ -2,7 +2,7 @@
     <nav class="navbarH">
         <div class="logo">
             <div class="icon-logo">
-                <img src="<?= APP['baseurl'] . '\Public\img\icons\icon-horizontal.png'; ?> " alt="logo-admin">
+                <img src="<?= APP['baseurl'] . '/Public/img/icons/icon-horizontal.png'; ?> " alt="logo-admin">
             </div>
             <div class="logo-title">
                 <h4>Admin</h4>
@@ -35,6 +35,25 @@
                         <li>
                             <a href="./articulos">
                                 Articulos
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="dropdown item-menu">
+                    <a id="dropdown" class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                        <i class="fa-solid fa-shop"></i> Ecommers
+                    </a>
+                    <ul class="dropdown-menu menuDown">
+                        <li>
+                            <a href="./category">
+                                Inventario
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subcategory">
+                                Banners
                             </a>
                         </li>
 

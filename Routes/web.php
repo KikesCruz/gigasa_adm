@@ -47,6 +47,8 @@ Route::post('/brands/addBrand', [BrandsController::class, 'addBrand']);
 
 
 Route::get('/articulos', [ArticulosCatController::class, 'catalogo']);
+Route::post('/articulos/showDetails', [ArticulosCatController::class, 'showDetails']);
+Route::post('/articulos/upViewProduct', [ArticulosCatController::class, 'upViewProduct']);
 
 
 

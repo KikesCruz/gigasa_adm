@@ -91,11 +91,21 @@
     color: white;
 }
 
-/** loader */
-.btn.loader-btn {
-    display: none;
+/** pictures product */
+.img-product-container {
+    height: 15rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
+.img-product-container img {
+    height: 100%;
+
+    display: block;
+}
 
 .item-menu a {
     font-size: 1em;

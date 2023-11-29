@@ -6,12 +6,12 @@ require APP_ROOT . 'Resources/views/shared/header.php';
     <?php
     require APP_ROOT . 'Resources/views/shared/navbar.php';
     ?>
-    <section class="container">
+    <section id="newview" class="container">
         <div class="title-section">
             <h2>Articulos del catalogo</h2>
         </div>
-        <div class="container-section">
-            <table id="list_inventario" class="table align-middle table-striped table-hover">
+        <div  class="container-section">
+            <table class="table align-middle table-striped table-hover">
                 <thead>
                     <tr>
                         <th>ID Producto:</th>
@@ -19,6 +19,7 @@ require APP_ROOT . 'Resources/views/shared/header.php';
                         <th>Nombre</th>
                         <th>Categoría</th>
                         <th>Sub Categoría</th>
+                        <th>Marca</th>
                         <th>Estatus</th>
                         <th>Acciones</th>
                     </tr>
@@ -26,42 +27,41 @@ require APP_ROOT . 'Resources/views/shared/header.php';
                 <tbody>
 
                     <?php foreach ($param as $product) : ?>
-                        <tr>
+                        <tr id="listCatalogo">
                             <td> <?= $product['id_product'] ?> </td>
                             <td> <?= $product['sku'] ?> </td>
                             <td> <?= $product['nombre_product'] ?> </td>
-                            <td> <?= $product['id_catSub'] ?> </td>
-                            <td> <?= $product['id_catSub'] ?> </td>
-                            <td> <?= $product['status_product'] ?> </td>
+                            <td> <?= $product['nombre_cat'] ?> </td>
+                            <td> <?= $product['nombre_Subcat'] ?> </td>
+                            <td> <?= $product['nombre_marca'] ?> </td>
+                            <td>
+                                <?= $product['status_product'] == 1 ?
+                                    ' <span
+                                class="badge bg-success rounded-pill d-inline">Activo</span>' :
+                                    ' <span
+                                class="badge bg-secondary rounded-pill d-inline">Inactivo</span>';
+
+
+                                ?> </td>
                             <td class="align-top">
                                 <div class="dropdown">
                                     <button class="d-flex align-items-center dropdown-toggle btn btn-warning" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                         Ver
                                     </button>
-                                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                                        <li><a class="dropdown-item" href="#">Editar</a>
-                                        </li>
+                                    <ul class="dropdown-menu  text-small shadow" aria-labelledby="dropdownUser1">
+                                        <li id="detailsProduct" class="dropdown-item item-menu">Detalles</li>
+                                        <li id="editProduct" class="dropdown-item item-menu">Editar</li>
 
-                                        <li><a class="dropdown-item" href="#">Profile</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Sign
-                                                out</a>
-                                        </li>
                                     </ul>
                                 </div>
                             </td>
                         </tr>
                     <?php endforeach; ?>
-
-
-                   
                 </tbody>
             </table>
         </div>
     </section>
 </main>
-
-
 
 
 <?php
