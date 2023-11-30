@@ -9,4 +9,14 @@ class LoginController extends Controller{
        
         return $this -> renderView('login');
     }
+
+    public function auth(){
+        if ($_POST['email'] == 'admin') {
+
+            return $this->renderView('home', [
+                'dato' => $_POST['email']
+            ]);
+        }
+        header('Location: /');
+    }
 }

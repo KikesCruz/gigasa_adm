@@ -47,7 +47,7 @@
                     </a>
                     <ul class="dropdown-menu menuDown">
                         <li>
-                            <a href="./category">
+                            <a href="./intvecommers">
                                 Inventario
                             </a>
                         </li>
@@ -78,7 +78,7 @@
                                 </a>
                             </li>
                             <li class="item-menu">
-                                <a href="#">
+                                <a href="./">
                                     Cerrar Sesión
                                 </a>
                             </li>

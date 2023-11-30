@@ -7,22 +7,24 @@ use App\Controllers\CategoryController;
 use App\Controllers\SubCategoryController;
 use App\Controllers\BrandsController;
 use App\Controllers\ArticulosCatController;
+use App\Controllers\InventarioEcommerController;
 /***
  * Routes para login
  */
 Route::get('/', [LoginController::class,'index']);
-
+Route::post('/home', [LoginController::class, 'auth']);
 
 /**
- * Routes para home
+ * Routes Home
  */
-Route::get('/home', [HomeController::class, 'home']);
-Route::post('/home', [HomeController::class,'validar']);
 
+ Route::get('/home',[HomeController::class,'home']);
 
 /**
  * Routes para category
  */
+
+
 Route::get('/category',[CategoryController::class,'category']);
 Route::post('/category/save', [CategoryController::class, 'saveCategory']);
 Route::post('/category/delete', [CategoryController::class, 'deleteCategory']);
@@ -50,7 +52,8 @@ Route::get('/articulos', [ArticulosCatController::class, 'catalogo']);
 Route::post('/articulos/showDetails', [ArticulosCatController::class, 'showDetails']);
 Route::post('/articulos/upViewProduct', [ArticulosCatController::class, 'upViewProduct']);
 
-
+/** Inventario Ecomm */
+Route::get('/intvecommers', [InventarioEcommerController::class, 'getInvent']);
 
 
 
